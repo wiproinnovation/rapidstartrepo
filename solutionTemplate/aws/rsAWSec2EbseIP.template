@@ -1,0 +1,30 @@
+{
+	"AWSTemplateFormatVersion" : "2016-03-14",
+	"Description" : "A sample template",
+	"Resources" : {
+		"MyEC2Instance" : {
+			"Type" : "AWS::EC2::Instance",
+			"Properties" : {
+				"ImageId" : "ami-somenumber here",
+				"InstanceType" : "t1.micro",
+				"KeyName" : "petclinic",
+				"BlockDeviceMappings" : [{
+						"DeviceName" : "/dev/sdm",
+						"Ebs" : {
+							"VolumeType" : "data-1",
+							"Iops" : "50",
+							"DeleteOnTermination" : "false",
+							"VolumeSize" : "20"
+						}
+					}
+				]
+			}
+		},
+		"MyEIP" : {
+			"Type" : "AWS::EC2::EIP",
+			"Properties" : {
+			"InstanceId : {"Ref": "MyEC2Instance"}
+			}
+		}
+	}
+}
