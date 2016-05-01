@@ -1,3 +1,3 @@
 #!/bin/sh
 
-echo "Hello World, Am I visible in Jenkins?"
+echo "Hello World, Jenkins doesn't see me"
