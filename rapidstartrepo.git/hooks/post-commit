@@ -1,0 +1,2 @@
+#!/bin/sh
+curl http://13.76.47.24/jenkins/git/notifyCommit?url=https://github.com/wiproinnovation/rapidstartrepo
