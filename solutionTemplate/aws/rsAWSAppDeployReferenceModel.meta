@@ -1,0 +1,9 @@
+{
+	name: "AWS Infra Reference CFN template C1 demo",
+		description: "Creates a reference design of all the necessary components to host and run a highly available multi-tier, multi-subnet app in AWS",
+			type: "blueprint",
+				viewUrl: "rsAWSAppDeployReferenceModel.template",
+					helpUrl: "",
+						icon: "images/default.png",
+							provider: "aws"
+							}
