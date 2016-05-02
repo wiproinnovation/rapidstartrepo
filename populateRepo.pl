@@ -17,5 +17,6 @@ $newEntry = '{name: "AWS Infra Reference CFN template C1 demo",description: "Cre
 $data =~ s/\]\;$/$newEntry\]\;/;
 print $data;
 # Write to the repo
-#open FILE, > $REPO or die "Cannot write to file $REPO: $!\n";
-#close FILE;
+open FILE, "> $REPO" or die "Cannot write to file $REPO: $!\n";
+print FILE $data;
+close FILE;
